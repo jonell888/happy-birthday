@@ -8,14 +8,18 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   margin: 0 auto;
   text-align: center;
-  visibility: hidden;
   position: relative;
   overflow: hidden;
 }
+
 
 .container div.six {
   top: 10vh;
@@ -118,16 +122,16 @@ body {
 
 .six img {
   display: inline-block;
-  max-width: 100%;
-  height: auto;
+  max-width: 320%;
+  height: 440px;
 }
 
 .six .hat {
   position: absolute;
-  width: 80px;
-  top: -35px;
-  left: 41.5%;
-  /* transform: scale(0.1); */
+  width: 50px;
+  top: -20%;
+  left: 0%; /* เปลี่ยนจาก left: 0% เป็น right: 0% */
+  
 }
 
 .baloons img {
@@ -251,9 +255,9 @@ body {
   }
 }
 
-@media screen and (max-height: 850px) and (max-width: 450px) {
+@media screen and (max-height: 580px) and (max-width: 450px) {
   .six .hat {
-    left: 32%;
+    right:  50%;
   }
 }
 
